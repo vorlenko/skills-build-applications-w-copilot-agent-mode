@@ -13,14 +13,13 @@ try:
     # Create collections
     collections = ["users", "teams", "activity", "leaderboard", "workouts"]
     for collection in collections:
-        db.create_collection(collection, capped=False)
-        print(f"Collection created: {collection}")
+        try:
+            db.create_collection(collection, capped=False)
+            print(f"Collection created: {collection}")
+        except PyMongoError as e:
+            print(f"Failed to create collection {collection}: {e}")
 
-    # Ensure unique index for users collection
-    db.users.create_index("email", unique=True)
-    print("Unique index created on 'email' field in users collection.")
-
-    print("Database and collections initialized successfully.")
+    print("Database and collections creation process completed.")
 
 except PyMongoError as e:
-    print("An error occurred:", e)
+    print("An error occurred while connecting to MongoDB:", e)
