@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "tracker",
     "rest_framework",
     "corsheaders",
-    "octofit_tracker",
+    "octofit_tracker",   # Ensure this is included
 ]
 
 MIDDLEWARE = [
