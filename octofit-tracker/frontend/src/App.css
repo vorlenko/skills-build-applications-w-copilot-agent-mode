@@ -1,0 +1,59 @@
+```css
+/* Add background color */
+body {
+  background-color: #f0f8ff; /* Light blue */
+  color: #333; /* Dark text color */
+}
+
+/* Style tables */
+table {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50; /* Green header */
+  color: white;
+}
+
+/* Style buttons */
+button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #4caf50; /* Green */
+}
+
+/* Style links */
+a {
+  color: #007bff; /* Blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Style navigation menu */
+.navbar {
+  background-color: #4caf50; /* Green */
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #d4edda; /* Light green */
+}
+```
