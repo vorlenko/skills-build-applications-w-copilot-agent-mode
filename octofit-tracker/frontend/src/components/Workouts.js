@@ -4,7 +4,7 @@ const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://special-telegram-5rwggpx5vjfp69x-3000.app.github.dev/api/workouts')
+    fetch('https://special-telegram-5rwggpx5vjfp69x-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);
